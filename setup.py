@@ -25,7 +25,7 @@ def setupInit():
     print("The Terminal OS made on python for fun!")
     print("Choose install directory:")
     installdir = input()
-    if installdir == "":
+    if installdir == None:
         print("ERROR")
         print("'' is not a correct directory")
         print("You must atleast type a letter, number or a symbol")

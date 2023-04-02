@@ -18,7 +18,7 @@ curdir = ""
 su = False
 
 def datafolder():
-    return 'C:\\Users\\*\\' if os.name=="nt" else os.path.expanduser("~")
+    return os.path.expanduser("~")
 
 output = ""
 Fore.LIGHTBLUE_EX
@@ -54,7 +54,6 @@ def pykern():
     global displayusername
     curdir = osdir
     displayusername = username
-    print(Fore.BLUE + "PyKern v0.0.1b - github release " + Style.RESET_ALL)
     while (True):
         if su == True:
             displayusername = "root"
